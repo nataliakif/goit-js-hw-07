@@ -22,9 +22,10 @@ gallery.insertAdjacentHTML('beforeend', makeGalleryMarkup(galleryItems));
 
 
 
-// let gallery = new SimpleLightbox('.gallery a', {
-//     captions: true
-//   });
+lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,});
 
     
         
