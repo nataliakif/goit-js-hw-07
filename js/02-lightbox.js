@@ -20,18 +20,11 @@ const makeGalleryMarkup = (elements) => {
 const gallery = document.querySelector('.gallery');
 gallery.insertAdjacentHTML('beforeend', makeGalleryMarkup(galleryItems));
 
-gallery.addEventListener('click', openPhotoClick);
 
-function openPhotoClick(event) {
-event.preventDefault();}
 
-let lightBox = new SimpleLightbox('.gallery a');
-lightBox.on('show.simplelightbox', function () {
-	console.log('traraar')
-});
+// let gallery = new SimpleLightbox('.gallery a', {
+//     captions: true
+//   });
 
-gallery.on('error.simplelightbox', function (e) {
-	console.log(e); // some usefull information
-});
     
         

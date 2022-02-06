@@ -29,8 +29,8 @@ function openPhotoClick(event) {
 
    if( event.target.nodeName !== 'IMG'){
     return;
-}
-event.preventDefault();
+    }
+    event.preventDefault();
 
 const instance = basicLightbox.create(`
     <img src="${event.target.dataset.source}" width="1140px" heigth ="744px">
